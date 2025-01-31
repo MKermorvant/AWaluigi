@@ -1,0 +1,84 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+
+*{
+    font-family: "Roboto", sans-serif;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #f0f0f0;
+}
+.board {
+    display: grid;
+    grid-template-columns: repeat(6, 50px);
+    grid-gap: 10px;
+    margin-top: 20px;
+    
+}
+.styled {
+    margin: 5px;
+}
+.case {
+    width: 50px;
+    height: 50px;
+    background-color: #fff;
+    border: 1px solid #000;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 18px;
+}
+.case#case1, .case#case2, .case#case3, .case#case4, .case#case5, .case#case6{
+    background-color: rgb(194, 71, 71);
+}
+
+.case#case7, .case#case8, .case#case9, .case#case10, .case#case11, .case#case12{
+    background-color: rgb(136, 41, 115);
+}
+
+.color-triangle {
+    position: fixed;
+    top: -250px;
+    left: -250px;
+    width: 500px;
+    height: 500px;
+    background-color: #ff0000;
+    transform: rotateZ(45deg);
+}
+.color-triangle2 {
+    position: fixed;
+    bottom: -250px;
+    right: -250px;
+    width: 500px;
+    height: 500px;
+    background-color: #741a47;
+    transform: rotateZ(45deg);
+    overflow: hidden;
+    z-index: 1;
+}
+.mario{
+    position: absolute;
+    width: 225px;
+    height: auto;
+    top: 3%;
+    left: 4%;
+    z-index: 2;
+}
+.waluigi {
+    position: absolute;
+    width: 200px; 
+    height: auto; 
+    bottom: 5%;
+    right: 3%;
+    z-index: 2;
+}
+.drapeau {
+    position: absolute;
+    width: 150px;
+    height: auto; 
+    bottom: 0%;
+    left: 2%;
+}
