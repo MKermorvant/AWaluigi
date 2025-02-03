@@ -12,45 +12,32 @@
     <h3>Entrez le nom du joueur 1</h3>
     <h3>Entrez le nom du joueur 2</h3>
     <input class="styled" type="button" value="Nouvelle partie" onclick="nouvellePartie()" />
+    <input class="styled" type="button" value="abandonner" onclick="abandonner()" />
     <input class="styled" type="button" value="Quitter" onclick="quitter()" />
     <br>
     <img class="mario" src="mario.png" alt="mario">
-    <img class="waluigi" src="waluigi.png" alt="waluigi">
-    <img class="drapeau" src="drapeau" alt="drapeau">
-    <div class="color-triangle red"></div>
-    <div class="color-triangle2 purple"></div>
+    <img class="waluigi" src="waluigi.webp" alt="waluigi">
+    <img class="drapeau" src="drapeau.png" alt="drapeau">
+    <div class="color-triangle"></div>
+    <div class="color-triangle2"></div>
     <div class="board">
-        <button class="case" id="case1" onclick="play(this.id)">4</button>
-        <button class="case" id="case2" onclick="play(this.id)">4</button>
-        <button class="case" id="case3" onclick="play(this.id)">4</button>
-        <button class="case" id="case4" onclick="play(this.id)">4</button>
-        <button class="case" id="case5" onclick="play(this.id)">4</button>
-        <button class="case" id="case6" onclick="play(this.id)">4</button>
-        <button class="case" id="case7" onclick="play(this.id)">4</button>
-        <button class="case" id="case8" onclick="play(this.id)">4</button>
-        <button class="case" id="case9" onclick="play(this.id)">4</button>
-        <button class="case" id="case10" onclick="play(this.id)">4</button>
-        <button class="case" id="case11" onclick="play(this.id)">4</button>
-        <button class="case" id="case12" onclick="play(this.id)">4</button>
+        <button class="case" id="0" onclick="play(this.id)">4</button>
+        <button class="case" id="1" onclick="play(this.id)">4</button>
+        <button class="case" id="2" onclick="play(this.id)">4</button>
+        <button class="case" id="3" onclick="play(this.id)">4</button>
+        <button class="case" id="4" onclick="play(this.id)">4</button>
+        <button class="case" id="5" onclick="play(this.id)">4</button>
+        <button class="case pp" id="11" onclick="play(this.id)">4</button>
+        <button class="case pp" id="10" onclick="play(this.id)">4</button>
+        <button class="case pp" id="9" onclick="play(this.id)">4</button>
+        <button class="case pp" id="8" onclick="play(this.id)">4</button>
+        <button class="case pp" id="7" onclick="play(this.id)">4</button>
+        <button class="case pp" id="6" onclick="play(this.id)">4</button>
         <div class="score1" id="score1">score joueur 1</div>
         <div class="score2" id="score2">score joueur 2</div>
     </div>
-
-    <script>
-        function nouvellePartie() {
-            const cells = document.querySelectorAll('.cell');
-            cells.forEach(cell => {
-                cell.textContent = '4';
-            });
-            alert('Nouvelle partie commencée !');
-        }
-
-        function quitter() {
-            if (confirm('Voulez-vous vraiment quitter ?')) {
-                window.close(); 
-            }
-        }
-    </script>
+    <script src="script.js"></script>
+</body>
 </body>
 
 </html>

@@ -1,0 +1,91 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+
+.color-triangle {
+    position: fixed;
+    top: -250px;
+    left: -250px;
+    width: 500px;
+    height: 500px;
+    background-color: red;
+    transform: rotateZ(45deg);
+}
+
+.waluigi{
+    position: fixed;
+    z-index: 1;
+    bottom: 5%;
+    right: 5%;
+}
+
+.mario{
+    position: fixed;
+    z-index: 1;
+    top: 5%;
+    left: 5%;
+}
+
+.color-triangle2{
+    position: fixed;
+    bottom: -250px;
+    right: -250px;
+    width: 500px;
+    height: 500px;
+    background-color: purple;
+    transform: rotateZ(45deg);
+    z-index: -1;
+}
+
+h1{
+    color:red;
+    text-align: center;
+    padding-bottom: 10px;
+}
+
+h1, h2, h3 {
+    color: #2c3e50;
+}
+
+*{
+    font-family:'Roboto','Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+body{
+    background-color: #f4f4f4;
+    color: #333;
+    padding: 20px;
+    max-width: 800px;
+    margin: 0 auto;
+    line-height: 1.6;
+}
+
+ol{
+    background-color: #fff;
+    border-radius: 5px;
+    padding: 20px 20px 20px 40px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+li{
+    margin-bottom: 15px;
+}
+
+#authors{
+    background-color: #e7e7e7;
+    border-radius: 5px;
+    padding: 10px;
+    margin-top: 20px;
+}
+
+#authors li{
+    margin-bottom: 5px;
+}
+
+#authors ol {
+    list-style-type: none;
+    padding: 0;
+    background-color: transparent;
+    box-shadow: none;
+}
+
+
+
+

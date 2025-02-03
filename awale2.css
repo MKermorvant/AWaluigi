@@ -19,7 +19,7 @@ body {
     
 }
 .styled {
-    margin: 5px;
+    margin : 5px;
 }
 .case {
     width: 50px;
@@ -31,12 +31,12 @@ body {
     align-items: center;
     font-size: 18px;
 }
-.case#case1, .case#case2, .case#case3, .case#case4, .case#case5, .case#case6{
+.case{
     background-color: rgb(194, 71, 71);
 }
 
-.case#case7, .case#case8, .case#case9, .case#case10, .case#case11, .case#case12{
-    background-color: rgb(136, 41, 115);
+.pp{
+    background-color: rgb(167, 35, 138); 
 }
 
 .color-triangle {
