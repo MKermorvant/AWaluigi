@@ -32,7 +32,7 @@ body {
     font-size: 18px;
 }
 .case{
-    background-color: rgb(194, 71, 71);
+    background-color: rgb(255, 0, 0);
 }
 
 .pp{
@@ -54,7 +54,7 @@ body {
     right: -250px;
     width: 500px;
     height: 500px;
-    background-color: #741a47;
+    background-color: rgb(167, 35, 138);
     transform: rotateZ(45deg);
     overflow: hidden;
     z-index: 1;
@@ -81,4 +81,44 @@ body {
     height: auto; 
     bottom: 0%;
     left: 2%;
+}
+
+.score1{
+    background-color: #ff0000;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    width: 40px;
+    position: absolute;
+    right: calc(100% + 10px);
+    height: 92px;
+
+    
+  }
+
+  .score2{
+    background-color: rgb(167, 35, 138);
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    width: 40px;
+    position: absolute;
+    left: calc(100% + 10px);
+    height: 92px;
+  }
+  
+  .score1:hover {
+    background-color: #0056b3;
+  }
+  
+  .score2:hover {
+    background-color: #0056b3;
+  }
+
+.board{
+    position: relative;
 }
